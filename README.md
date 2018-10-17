@@ -3,8 +3,8 @@
  
 |Student Name|ID|
 |---|---
-|**Gaochao Wang|013769431
-|**Yuwen Li|011541868
+|**Gaochao Wang**|**013769431**
+|**Yuwen Li**|**011541868**
 
    
 ## Team Name:  
