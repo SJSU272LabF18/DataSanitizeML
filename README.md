@@ -1,10 +1,10 @@
 # Project-Team-29
-CMPE 272 Project Abstract
+## CMPE 272 Project Abstract
  
 |Student Name|ID|
 |---|---
-|Gaochao Wang|013769431
-Yuwen Li|011541868
+|**Gaochao Wang|013769431
+|**Yuwen Li|011541868
 
    
 ## Team Name:  
