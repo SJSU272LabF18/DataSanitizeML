@@ -1,5 +1,10 @@
 # Project-Team-29
-## CMPE 272 Project Abstract
+## CMPE 272 Project Abstract not approved here is the my idea you have to work on:
+
+ML Based Data Sanitization recommendation
+
+Because of GDPR and other privacy regulations and data breach concerns, this is becoming a need for organization to identify and destroy data. This is something will have high impact/value on our platform.
+
  
 |Student Name|ID|
 |---|---|
