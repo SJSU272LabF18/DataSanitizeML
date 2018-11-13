@@ -16,7 +16,7 @@ Because of GDPR and other privacy regulations and data breach concerns, this is 
     Team 29  
 
   
-## Idea 1
+～～## Idea 1
 ### Project title:   
 Search engine for an online market
    
@@ -49,4 +49,4 @@ This notification application can be used for situations like finding used-car, 
 
 
 ### Proposed methodology/ resources: 
-`Heritrix(open source crawler)` `MySQL` `Nosql` `Servlet`
+`Heritrix(open source crawler)` `MySQL` `Nosql` `Servlet`～～
