@@ -7,7 +7,8 @@ from sklearn.feature_extraction.text import CountVectorizer
 import time
 
 class scan_result:
-    def __init__(self, num_of_good_table, num_of_bad_table, num_of_good_row, num_of_bad_row, table_list):
+    def __init__(self, time_consumed, num_of_good_table, num_of_bad_table, num_of_good_row, num_of_bad_row, table_list):
+        self.time = time_consumed
         self.num_of_good_table = num_of_good_table
         self.num_of_bad_table = num_of_bad_table
         self.num_of_good_row = num_of_good_row
@@ -43,6 +44,9 @@ def data_nlp_process():
             fw.write(str(i) + '/')
     fr.close()
     fw.close()
+
+    total_raw = len(data)
+    return total_raw
 
 def data_cleaning():
     path = "/Users/liyuwen/Desktop/272/project/code/processed.txt"
@@ -174,22 +178,37 @@ def delete_data(table_item):
     db.close()
 
 if __name__ == '__main__':
-    data_nlp_process()
+    total_raw = data_nlp_process()
 
     name_list = []
     table_list = []
+
     raw_result = []
+
     print('please input key words:')
     key_words = input()
     start = time.time()
+
+
     raw_result = TF_IDF(key_words)
+
     end = time.time()
     for i in raw_result:
         trans_into_class(i, name_list, table_list)
     time_consumed = end - start
-    print(time_consumed)
 
     for tb in table_list:
         print(tb.table_name)
         print(tb.col_name)
         print(tb.data_list)
+
+
+    good_table = len(name_list) - len(table_list)
+    good_raw = total_raw - len(raw_result)
+
+    scan_result = scan_result(time_consumed, good_table, len(table_list), good_raw,len(raw_result), table_list)
+    print(scan_result.time)
+    print(scan_result.num_of_good_table)
+    print(scan_result.num_of_bad_table )
+    print(scan_result.num_of_good_row)
+    print(scan_result.num_of_bad_row)
