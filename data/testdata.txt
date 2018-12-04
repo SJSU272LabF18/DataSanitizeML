@@ -1,0 +1,5 @@
+table1^^id,name,detail^^1>>jane>>Instead, Bush said that he was ready to go and be with Barbara, his wife of 73 years, and their late daughter Robin, who died of leukemia as a child.
+table1^^id,name,detail^^2>>Bush>>died late Friday at his home in Houston surrounded by his family, including his son Neil Bush and wife Maria, his best friend and former Secretary of State James Baker, and his grandson Pierce Bush.
+table2^^id,name,detail^^1>>tname>>Bush will lie in state at the US Capitol before a memorial service at the National Cathedral in Washington, DC. A second memorial service will follow at St. Martin's Episcopal Church in Houston.
+table3^^id,name,detail^^1>>tn>>Bush will be laid to rest at the George H.W. Bush Presidential Library in College Station, Texas, alongside his wife, and Robin.
+table4^^id,name,detail^^4>>what>>Specific times and more details will be announced at a later time, according to Bush's spokesman Jim McGrath.
