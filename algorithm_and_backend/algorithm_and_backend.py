@@ -22,7 +22,7 @@ class table_item:
         self.data_list = data_list
 
 def data_nlp_process():
-    path = '/Users/liyuwen/Desktop/272/project/code/testdata.txt'
+    path = '/Users/liyuwen/Desktop/272/Project-Team-29/algorithm_and_backend/data_all.txt'
     fr = open(path, encoding='utf-8')
     data = []
     for line1 in fr:
@@ -38,7 +38,7 @@ def data_nlp_process():
             temp_list.append(str(x))
         temp_list.append('\n')
 
-    path = "/Users/liyuwen/Desktop/272/project/code/processed.txt"
+    path = "/Users/liyuwen/Desktop/272/Project-Team-29/algorithm_and_backend/processed.txt"
     with open(path, 'w', encoding='utf-8') as fw:
         for i in temp_list:
             fw.write(str(i) + '/')
@@ -49,7 +49,7 @@ def data_nlp_process():
     return total_raw
 
 def data_cleaning():
-    path = "/Users/liyuwen/Desktop/272/project/code/processed.txt"
+    path = "/Users/liyuwen/Desktop/272/Project-Team-29/algorithm_and_backend/processed.txt"
     a = []
     with open(path, 'r', encoding='utf-8') as fr:
         for line in fr:
@@ -80,6 +80,7 @@ def trans_into_class(string, name_list, table_list):
     for i in data_all[1].split(','):
         t_col.append(i)
     for j in data_all[2].split('>>'):
+        j = j.strip()
         t_detial.append(j)
 
     if t_name not in name_list:
@@ -202,8 +203,9 @@ if __name__ == '__main__':
         print(tb.col_name)
         print(tb.data_list)
 
-
-    good_table = len(name_list) - len(table_list)
+    all_table = 2
+    good_table = all_table - len(table_list)
+    
     good_raw = total_raw - len(raw_result)
 
     scan_result = scan_result(time_consumed, good_table, len(table_list), good_raw,len(raw_result), table_list)
