@@ -17,5 +17,5 @@ ML Based Data Sanitization Recommendation System
 Because of GDPR and other privacy regulations and data breach concerns, this is becoming a need for organization to identify and destroy data. This is something will have high impact/value on our platform.
 
 ### Proposed methodology/ resources:  
-`Tensorflow` `Mysql` `CoreNLP`
+`nltk` 'sklearn' `Mysql` `CoreNLP`
   
