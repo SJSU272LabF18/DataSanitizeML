@@ -19,3 +19,6 @@ Because of GDPR and other privacy regulations and data breach concerns, this is 
 ### Proposed methodology/ resources:  
 `nltk` `sklearn` `Mysql` `CoreNLP`
   
+### Instruction to Execute the code:
+1. download library for dependancy  
+2. start the program by running main_UI.py

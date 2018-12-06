@@ -89,8 +89,8 @@ class ListPage(tk.Frame):
         # for i in self.tree.get_children():
         #     self.tree.delete(i)
 
-        for l in self.table_list:
-            print(l)
+        # for l in self.table_list:
+        #     print(l)
 
         if len(self.table_list) > self.table_index:
             table_item = self.table_list[self.table_index]
@@ -105,7 +105,7 @@ class ListPage(tk.Frame):
                 self.tree.column(col, width= int(580 / len(col_name)), minwidth=0, anchor='center')
 
             for list in data_list:
-                print('insert', list[self.col_start_pos:] )
+                # print('insert', list[self.col_start_pos:] )
                 self.tree.insert('', 'end', values = list[self.col_start_pos:] )
 
     def moveUp(self):
@@ -114,9 +114,9 @@ class ListPage(tk.Frame):
             table_item = self.table_list[self.table_index]
 
             for dic in selection:
-                print('select', self.tree.item(dic)['values'])
+                # print('select', self.tree.item(dic)['values'])
                 row = self.toString(self.tree.item(dic)['values'])
-                print('converted to', row)
+                # print('converted to', row)
                 table_item.data_list.remove(row)
 
             remain = list(table_item.data_list)
@@ -139,9 +139,9 @@ class ListPage(tk.Frame):
                 table_item = self.table_list[self.table_index]
                 toDelete_data_list = []
                 for dic in selection:
-                    print('delete data row', self.tree.item(dic)['values'])
+                    # print('delete data row', self.tree.item(dic)['values'])
                     row = self.toString( self.tree.item(dic)['values'])
-                    print('converted to', row)
+                    # print('converted to', row)
                     table_item.data_list.remove( row )
                     toDelete_data_list.append( row )
                     self.tree.delete(dic)
