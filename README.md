@@ -21,4 +21,5 @@ Because of GDPR and other privacy regulations and data breach concerns, this is 
   
 ### Instruction to Execute the code:
 1. download library for dependancy  
-2. start the program by running main_UI.py
+2. revise the path variable in algorithm_and_backend.py to your local file location to store temperary file.
+3. start the program by running main_UI.py
